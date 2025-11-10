@@ -1,64 +1,71 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Superkar Badhu Catering Reviews</title>
+
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #fff);
-      margin: 0;
-      padding: 0;
+      background-image: url('https://raw.githubusercontent.com/socialinfi321-svgph/superkar-reviews/main/1762802491996.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    .title {
-      font-size: 42px;
-      font-weight: 700;
-      color: #d32f2f;
+      justify-content: flex-start;
       text-align: center;
-      margin-top: 30px;
-      margin-bottom: 10px;
+      padding-top: 197px;
     }
 
     .subtitle {
-      font-size: 18px;
-      text-align: center;
+      font-size: 14px;
       color: #333;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
 
     .review-box {
-      width: 80%;
-      max-width: 700px;
-      background: #f7f7f7;
-      border-radius: 30px;
-      padding: 24px;
-      font-size: 17px;
+      width: 90%;
+      max-width: 650px;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 25px;
+      padding: 20px 24px 50px 24px;
+      font-size: 15px;
+      font-family: 'Saira', Arial, Helvetica, sans-serif;
+      font-weight: 800;
       color: #333;
-      line-height: 1.6;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      line-height: 1.5;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
       text-align: left;
       position: relative;
+      margin-bottom: 10px;
     }
 
     .copy-btn {
       position: absolute;
-      bottom: -16px;
-      left: 30px;
+      bottom: 8px;
+      left: 24px;
       background: #1976d2;
       color: white;
       border: none;
-      padding: 8px 14px;
-      border-radius: 8px;
+      padding: 8px 16px;
+      border-radius: 6px;
       cursor: pointer;
       font-weight: 600;
+      font-size: 14px;
       transition: 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
 
     .copy-btn:hover {
@@ -67,15 +74,17 @@
 
     .google-btn {
       display: inline-block;
-      margin-top: 40px;
+      margin-top: 35px;
       border-radius: 8px;
       text-decoration: none;
       color: #fff;
       font-weight: 600;
-      padding: 12px 18px;
+      font-size: 15px;
+      padding: 11px 20px;
       background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335);
-      background-size: 300% 300%;
-      animation: colorShift 6s infinite alternate;
+      background-size: 500% 500%;
+      animation: colorShift 2s infinite alternate;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.25), 0 0 8px rgba(66, 133, 244, 0.3);
     }
 
     @keyframes colorShift {
@@ -84,24 +93,35 @@
     }
 
     .star-section {
-      margin-top: 10px;
+      margin-top: 40px;
       text-align: center;
       color: #000;
     }
 
-    .star-section small {
+    .star-section .top-text {
       display: block;
       font-size: 10px;
       margin-bottom: 2px;
+      color: #000;
+      font-weight: 500;
     }
 
     .stars {
       font-size: 22px;
       letter-spacing: 3px;
+      margin: 0;
+    }
+
+    .star-section .bottom-text {
+      display: block;
+      font-size: 10px;
+      margin-top: 2px;
+      color: #000;
+      font-weight: 500;
     }
 
     .thanks {
-      margin-top: 40px;
+      margin-top: 30px;
       font-size: 22px;
       font-family: 'Brush Script MT', cursive;
       color: #111;
@@ -110,168 +130,109 @@
 
     .policy {
       font-size: 12px;
-      color: #777;
+      color: #3b2121;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 3px;
       line-height: 1.4;
+      max-width: 650px;
     }
   </style>
 </head>
 <body>
-  <div class="title">Superkar Badhu Catering</div>
   <div class="subtitle">To give review, copy the text below 👇</div>
 
   <div class="review-box" id="reviewBox">
-    <p id="reviewText"></p>
+    <p id="reviewText">Loading review...</p>
     <button class="copy-btn" id="copyBtn">Copy Text</button>
   </div>
 
-  <a href="https://g.page/r/CYsCsoaIcA7gEBE/review" target="_blank" rel="noopener" class="google-btn">
-     Google Review 
+  <a href="https://g.page/r/CYsCsoaIcA7gEBE/review" class="google-btn">
+    Google Reviews
   </a>
 
   <div class="star-section">
-    <small>only give</small>
+    <span class="top-text">Only give</span>
     <div class="stars">⭐⭐⭐⭐⭐</div>
-    <small>May your day not be good but great!</small>
+    <span class="bottom-text">May your day not be good but great</span>
   </div>
 
-  <div class="thanks">Thanks for supporting us!</div>
+  <div class="thanks">Thanks for supporting</div>
 
   <div class="policy">
-    <p>All Reviews are voluntary and for feedback purpose only.</p>
-    <p> By using this page, you agree that reviews reflects personal experience only.</p>
+    <p>All reviews are voluntary, and for feedback purposes only.</p>
+    <p>By using this page, you agree that reviews reflect personal experience only.</p>
   </div>
 
   <script>
-    const reviews = [
-"Super Kar Vadhu Catering ka food truly delicious tha. Elders se unka polite behavior dekh kar dil khush ho gaya. Saaf-suthra setup aur professional service.",
-"Humne shaadi ke liye hire kiya aur sab expect se zyada accha nikla. Food hygienic aur tasty, staff extremely respectful. Thank you Super Kar Vadhu Catering!",
-"Birthday party perfectly handle ki. Bacche aur bade sab khush. Clean kitchen, fresh food, aur staff ki smile sabse best.",
-"Wedding anniversary ke liye inhe bulaya aur truly impressed rahe. Seniors ko pehle serve karna, polite tone — bohot accha laga.",
-"Super Kar Vadhu Catering ka taste har baar perfect hota hai. Hygiene aur presentation top-notch. Family jaisa feel diya.",
-"Shaadi ke function mein inka management flawless tha. Food hot and flavorful. Elders ko bina bole help karte dekha — rare professionalism!",
-"Birthday event smooth raha. Snacks crispy, main course yummy. Staff genuinely caring.",
-"Humare anniversary dinner ko special banane ke liye shukriya. Hygienic food, graceful service, aur simplicity ka perfect combo.",
-"Super Kar Vadhu Catering ki sabzi aur sweets ka taste unforgettable. Kitchen spotless aur timely service.",
-"Family wedding mein inhone jo warmth dikhayi — priceless. Food sabko pasand aaya, especially elderly ko.",
-"Birthday decoration simple aur elegant. Food light yet flavorful. Staff well-trained and soft spoken.",
-"Inke biryani aur paneer dishes ki baat hi alag hai. Purity feel hoti hai. Thanks Super Kar Vadhu Catering.",
-"Humare parents ka special anniversary tha — inhone respectfully serve kiya. Dil jeet liya.",
-"Hygiene pe itna dhyan diya ki hum bohot comfortable feel kiye. Taste equally good.",
-"Wedding reception amazing bana diya. Buffet presentation classy and clean. Guests still praising food.",
-"Birthday cake aur snacks fresh aur balanced sweet level. Staff badi pyaari nature wale.",
-"Super Kar Vadhu Catering always consistent — taste, hygiene, behavior sab perfect. Old people ko special care deta staff.",
-"Wedding dinner ki rotiyan garma-garam milti rahi. Loved the hospitality.",
-"Anniversary party mein chhota event tha but unhone full attention diya. Bohot sakoon bhara experience.",
-"Staff ki uniform clean, manners absolutely lovely. Food comforting just like ghar ka.",
-"Shaadi mein inka sweet counter sabse loved tha. Hygiene outstanding.",
-"Birthday pe live counter rakha — fun and tasty. Elders ke liye seating assist bhi diya.",
-"Super Kar Vadhu Catering ka taste natural hai, masala balanced. Respect to their quality.",
-"Wedding anniversary surprise plan mein support kiya. Itna humble staff kahin nahi.",
-"Food aroma itself made everyone hungry. Saaf kitchen dekh hum impressed hue.",
-"Buffet line well managed. Elders ko plate lekar serve kiya — gratitude!",
-"Super Kar Vadhu Catering always professional. Taste & hygiene unbeatable.",
-"Birthday snacks variety bahut thoughtful thi. Bachcho ko bhi pasand aayi.",
-"Shaadi mein timing perfect thi — koi rush nahi, koi delay nahi. True professionals.",
-"Anniversary pe inhone quietly ensure ki sab happy rahe. Food fresh and soulful.",
-"Salad aur chutney tak fresh and tasty. Hygiene 10/10.",
-"Wedding mein unka calm behavior admire kiya. Bade buzurgon ke liye special seat arrangement bhi ki.",
-"Birthday noodles & rolls amazing. Staff polite and smiling.",
-"Anniversary dinner tables beautifully set. Food warm and satisfying.",
-"Super Kar Vadhu Catering ka paneer melt-in-mouth. Kitchen shining clean.",
-"Wedding hall mein koi mess nahi. Constant cleanliness maintained.",
-"Birthday event small tha but inhone full energy se serve kiya. Thankful.",
-"Superkar Badhu Catering handled our wedding with perfection. The food was flavorful and freshly prepared. Their respectful behavior toward elders truly touched our hearts.",
-"We booked Superkar Badhu Catering for a birthday party, and everything was flawless. Delicious food, clean setup, and warm service. Elder guests felt valued and comfortable.",
-"The anniversary dinner catered by Superkar Badhu Catering was exceptional. Fresh ingredients, elegant presentation, and polite staff. We loved the way they cared for our seniors.",
-"Superkar Badhu Catering made our wedding memorable with their amazing food. Every dish was served hot and hygienically. Their respectful attitude toward elders was admirable.",
-"Our daughter’s birthday event was beautifully managed. Superkar Badhu Catering delivered tasty, hygienic food and friendly service. Seniors were treated with patience and love.",
-"Anniversary event was a delight thanks to Superkar Badhu Catering. Pure and delicious food, neat arrangement, and calm staff. Elders appreciated their gentle behavior.",
-"Weddings can be stressful, but Superkar Badhu Catering made everything smooth. The food quality was excellent and hygiene was outstanding. They truly honor elderly guests.",
-"We chose Superkar Badhu Catering for a birthday celebration, and the experience was wonderful. Fresh taste, clean counters, and good service. Elder members felt cared for.",
-"Superb service at our anniversary dinner. Food tasted home-style yet premium. Superkar Badhu Catering staff treated our elders like family.",
-"Superkar Badhu Catering made our wedding feast unforgettable. Neat setup, delicious flavors, and respectful staff. Truly a warm experience.",
-"Birthday catering was impressive — hot food, fresh salads, and clean plates. Senior guests were served first with great respect. Thank you Superkar Badhu Catering!",
-"The anniversary celebration felt magical. Food had authentic taste and top hygiene. Staff’s politeness toward elders stood out beautifully.",
-"Superkar Badhu Catering served at our wedding and exceeded expectations. Perfect taste, timely service, and hygiene on point. Elders appreciated their support.",
-"We booked them for a birthday party — every item tasted amazing. Superkar Badhu Catering staff was humble and courteous. Senior guests felt very comfortable.",
-"A wonderful anniversary dinner experience. Fresh dishes, tidy counters, and gentle staff. Superkar Badhu Catering made our family very happy.",
-"Wedding catering was beyond perfect. Food was rich, aromatic, and well-balanced. The way they guided and helped elderly guests was admirable.",
-"Superkar Badhu Catering impressed us at a birthday celebration. Excellent taste, clean kitchen, and thoughtful serving. Elders were given special care.",
-"Anniversary dinner setup was elegant and peaceful. Food tasted pure and comforting. Elders were treated with real respect.",
-"Superkar Badhu Catering made our wedding experience joyful. Well-organized buffet and warm hospitality. Elderly guests were served with patience.",
-"Birthday event catering was fantastic. Fresh snacks, premium flavors, and neat service. Seniors appreciated the extra attention.",
-"Anniversary catering felt homely and rich. The team was kind and professional. Elders were guided and served warmly by Superkar Badhu Catering.",
-"Superkar Badhu Catering elevated our wedding. Clean plates, hot food, and beautiful flavors. Staff treated elders with grace.",
-"Birthday setup was smooth and cheerful. Tasty food, fast service, and respectful staff. Seniors felt extremely comfortable.",
-"The anniversary lunch was a lovely experience. Pure taste and great hygiene. Superkar Badhu Catering staff showed genuine care for elders.",
-"Wedding food by Superkar Badhu Catering was outstanding. Every dish felt fresh and wholesome. Their behavior toward elderly family members was heartwarming.",
-"Birthday event was perfect — excellent quality and elegant service. Seniors were assisted politely. Thank you Superkar Badhu Catering.",
-"Anniversary catering felt personal and warm. Delicious food served with care. Elders felt respected and welcomed.",
-"Superkar Badhu Catering made our wedding stress-free. Their service was organized and clean. Elder guests were given priority and comfort.",
-"Birthday menu was thoughtfully prepared. Fresh flavors and hygienic presentation. Senior citizens were treated with love.",
-"Anniversary celebration tasted divine. Warm, polite service and pure ingredients. Elders felt honored by Superkar Badhu Catering.",
-"Superkar Badhu Catering did a fabulous job at our wedding. Fresh breads, flavorful curries, and perfect hygiene. Elder guests were served first.",
-"Impressed with birthday catering — neat arrangement and tasty food. Seniors appreciated the staff’s polite behavior.",
-"Our anniversary dinner felt homely and classy. Every dish had quality and freshness. Superkar Badhu Catering treated elders with compassion.",
-"The wedding catering was extraordinary. Clean environment, tasty dishes, and graceful serving. Seniors received special attention.",
-"Birthday snacks and meals were delightful. Warm service and hygienic counters. Elders were gently assisted throughout.",
-"The anniversary event went smoothly thanks to Superkar Badhu Catering. Lovely flavors and respectful hospitality. Seniors felt cared for.",
-"Perfect wedding catering — hot food, organized team, and clean dining area. Elder guests received priority service.",
-"Birthday celebration was memorable. Tasty food served politely and professionally. Elders felt comfortable and respected.",
-"Anniversary catering by Superkar Badhu Catering was heart-warming. Pure taste and calm service. Seniors were treated like family.",
-"Exceptional wedding service — beautifully cooked and hygienic food. Staff behavior toward elders was outstanding.",
-"Birthday function planning was smooth. Quality ingredients and warm attitude. Senior guests appreciated the courtesy.",
-"Anniversary dinner felt elegant. Delicious food served with humble manners. Elders received gentle care.",
-"Wedding guests loved the food. Clean buffet line and prompt service. Seniors were handled with dignity.",
-"Perfect birthday catering by Superkar Badhu Catering. Fresh meals, neat presentation, and polite staff. Elders were very happy.",
-"Anniversary event went beautifully. Great hygiene and comforting taste. Seniors felt respected and supported.",
-"Wedding food was rich, aromatic, and clean. Staff especially attentive to elders. Thank you Superkar Badhu Catering.",
-"Excellent birthday setup — warm food and cheerful service. Elders felt safe and valued.",
-"Anniversary catering had the perfect balance of taste and hygiene. Superkar Badhu Catering treated seniors with utmost kindness.",
-"Guests loved our wedding meals. Organized service, clean plates, and fresh dishes. Elders felt comfortable and honored.",
-"Delightful birthday catering experience — premium taste and neat arrangements. Elders received extra attention, which we loved.",
-"Anniversary event was peaceful and well-served. Pure flavors and polite staff. Seniors enjoyed the care given by Superkar Badhu Catering.",
-"Wedding service was professional and timely. Delicious food and spotless surroundings. Elderly guests were served patiently.",
-"Birthday party food was superb. Hygienic counters and warm hospitality. Elders were treated with love and dignity.",
-"Anniversary catering was heart-touching. Fresh, clean, and beautifully served food. Seniors felt respected and relaxed.",
-"Wedding celebration elevated by Superkar Badhu Catering. Flavorful dishes and proper hygiene. Elders were served with care and attention.",
-"Birthday catering exceeded expectations. Fresh buffet and well-behaved staff. Seniors appreciated the kindness shown to them.",
-"Anniversary dinner felt authentic and heartful. Neat presentation and warm service. Elder guests felt truly valued.",
-"Amazing wedding catering — pure taste and professional staff. Elders received special support from Superkar Badhu Catering.",
-"Birthday event was delightful. Quality food and gentle behavior. Seniors were assisted thoughtfully.",
-"Anniversary lunch was wonderful. Classic flavors, clean service area, and humble staff. Elders were treated with comfort and respect.",
-"Wedding feast was a treat. Hot, fresh, and hygienically served. Older guests felt appreciated and attended to.",
-"Birthday celebration catered beautifully. Great taste and tidy arrangements. Seniors felt happy and comfortable.",
-"Anniversary catering showed true warmth. High-quality food and respectful staff. Elders received priority attention.",
-"Incredible wedding service — pure flavors and spotless plates. Superkar Badhu Catering treated elders with patience.",
-"Memorable birthday event with soulful food. Friendly staff and clean service style. Seniors felt included and respected.",
-"Anniversary dinner was well-organized. Tasty meals and hygienic counters. Elders felt safe and honored.",
-"Wedding catering done with passion. Real flavors, fresh breads, and disciplined service. Seniors were given special care.",
-"Birthday catering by Superkar Badhu Catering was joyful. Warm food, neat tables, and polite communication. Elders appreciated the treatment.",
-"Anniversary event was handled gracefully. Authentic food and perfect hygiene. Senior citizens were attended with love.",
-"Superkar Badhu Catering made our wedding extraordinary. Exceptional food quality, tidy service, and humble staff. Elders were served with great respect and kindness."
-    ];
+    // ✅ Updated API URL
+    const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbzB28FqkFtftAoErowy7ILzqrVTGGZD8Q5wwpzukGNAtJzyrRpnrywgMd_HUcQPV8mEHg/exec';
 
-    const randomReview = reviews[Math.floor(Math.random() * reviews.length)];
-    document.getElementById("reviewText").innerText = randomReview;
+    const reviewText = document.getElementById('reviewText');
+    const copyBtn = document.getElementById('copyBtn');
 
-    document.getElementById("copyBtn").addEventListener("click", async function() {
+    async function fetchReview() {
       try {
-        await navigator.clipboard.writeText(randomReview);
-        this.innerText = "Copied ✓";
-        setTimeout(() => this.innerText = "Copy Text", 2000);
+        const response = await fetch(SHEET_API_URL + '?action=get');
+        if (!response.ok) throw new Error('Failed to fetch review');
+
+        const textData = await response.text();
+        console.log('Raw response:', textData);
+
+        let data;
+        try {
+          data = JSON.parse(textData);
+        } catch {
+          reviewText.innerText = textData.trim() || "No review text found.";
+          setupCopyButton(textData.trim());
+          return;
+        }
+
+        if (data.error) {
+          reviewText.innerText = data.error;
+          copyBtn.style.display = "none";
+        } else if (data.review) {
+          reviewText.innerText = data.review;
+          setupCopyButton(data.review);
+        } else {
+          reviewText.innerText = "No reviews found.";
+          copyBtn.style.display = "none";
+        }
+
       } catch (err) {
-        alert("Copy failed — please copy manually.");
+        console.error('Error:', err);
+        reviewText.innerText = "Error fetching review. Please try again later.";
+        copyBtn.style.display = "none";
       }
-    });
+    }
+
+    function setupCopyButton(textToCopy) {
+      const newBtn = copyBtn.cloneNode(true);
+      copyBtn.parentNode.replaceChild(newBtn, copyBtn);
+
+      newBtn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(textToCopy);
+          newBtn.innerText = "Copied ✓";
+          setTimeout(() => (newBtn.innerText = "Copy Text"), 2000);
+        } catch {
+          const textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          textarea.style.position = "fixed";
+          textarea.style.left = "-9999px";
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand("copy");
+          document.body.removeChild(textarea);
+          newBtn.innerText = "Copied ✓";
+          setTimeout(() => (newBtn.innerText = "Copy Text"), 2000);
+        }
+      });
+    }
+
+    fetchReview();
   </script>
 </body>
 </html>
-
-
-
 
 
 
